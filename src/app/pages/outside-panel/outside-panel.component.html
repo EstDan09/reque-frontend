@@ -1,1 +1,34 @@
-<p>outside-panel works!</p>
+<div class="panel">
+
+    <div class="background">
+
+            <div class="display item">
+                <!-- <h1>Out of Service</h1> -->
+
+                <h1 *ngIf="!isElevatorError">{{ floor }}</h1>
+                <h1 *ngIf="isElevatorError">Out of Service</h1>
+            </div>  
+            
+            <button class="upBtn item btn" type="button" *ngIf="!isElevatorError" >
+                <img src="../../../assets/up-arrow.png" alt="up arrow">
+            </button>
+            
+            <button class="downBtn item btn" type="button" *ngIf="!isElevatorError">
+                <img src="../../../assets/down-arrow.png" alt="up arrow">
+            </button>
+
+            <button class="upBtn item" type="button" *ngIf="isElevatorError">
+                <img src="../../../assets/up-arrow.png" alt="up arrow">
+            </button>
+            
+            <button class="downBtn item" type="button" *ngIf="isElevatorError">
+                <img src="../../../assets/down-arrow.png" alt="up arrow">
+            </button>
+        
+        <!-- <button type="button">Click me</button> -->
+        
+    </div>
+
+    <a class="enter-btn" href="/inner"><button>Entrar</button></a>
+    
+</div>

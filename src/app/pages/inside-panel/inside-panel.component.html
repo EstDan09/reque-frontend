@@ -8,7 +8,7 @@
                         {{currentNumber}}
                     </p>
                 </div>
-                <img src="assets/emergency.svg" class="img-button-alt" (click)="updateNumber(6)">
+                <img src="assets/emergency.svg" class="img-button-emergency" (click)="updateNumber(6)">
             </div>
             <div class="panel-left-key">
                 <div class="div-row">
@@ -21,8 +21,9 @@
                         <img src="assets/1.svg" class="img-button" (click)="updateNumber(1)">
                     </div>
                     <div class="up-down">
-                        <p>close</p>
-                        <p>open</p>
+                        <img src="assets/cerrarPuerta.png" class="img-button-doors">
+                        <img src="assets/abrirPuerta.png" class="img-button-doors">
+                        <a class="enter-btn" href="/outer"><button>Salir</button></a>
                     </div>
                 </div>
             </div>
@@ -31,22 +32,22 @@
             <div>
                 <div class="panel-right-window">
                     <p class="number-on-panel">
-                        {{currentNumber}}
+                        {{phoneNumber}}
                     </p>
                 </div>
                 <div class="number-panel">
-                    <img src="assets/icons8-1-100 1.svg" alt="">
-                    <img src="assets/icons8-2-100 1.svg" alt="">
-                    <img src="assets/icons8-3-100 1.svg" alt="">
-                    <img src="assets/icons8-4-100 1.svg" alt="">
-                    <img src="assets/icons8-5-100 1.svg" alt="">
-                    <img src="assets/icons8-6-100 1.svg" alt="">
-                    <img src="assets/icons8-7-100 1.svg" alt="">
-                    <img src="assets/icons8-8-100 1.svg" alt="">
-                    <img src="assets/icons8-9-100 1.svg" alt="">
-                    <img src="assets/icons8-backspace-100 1.svg" alt="">
-                    <img src="assets/icons8-0-100 1.svg" alt="">
-                    <img src="assets/icons8-enter-100 1.svg" alt="">
+                    <img src="assets/icons8-1-100 1.svg" (click)="pressKey('1')">
+                    <img src="assets/icons8-2-100 1.svg" (click)="pressKey('2')">
+                    <img src="assets/icons8-3-100 1.svg" (click)="pressKey('3')">
+                    <img src="assets/icons8-4-100 1.svg" (click)="pressKey('4')">
+                    <img src="assets/icons8-5-100 1.svg" (click)="pressKey('5')">
+                    <img src="assets/icons8-6-100 1.svg" (click)="pressKey('6')">
+                    <img src="assets/icons8-7-100 1.svg" (click)="pressKey('7')">
+                    <img src="assets/icons8-8-100 1.svg" (click)="pressKey('8')">
+                    <img src="assets/icons8-9-100 1.svg" (click)="pressKey('9')">
+                    <img src="assets/icons8-backspace-100 1.svg" (click)="clear()">
+                    <img src="assets/icons8-0-100 1.svg" (click)="pressKey('0')">
+                    <img src="assets/icons8-enter-100 1.svg">
                 </div>
             </div>
         </div>
