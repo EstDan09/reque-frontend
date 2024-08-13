@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class InsidePanelComponent {
 
+  currentNumber: number = 0;
+
+  updateNumber(newNumber: number): void {
+    this.currentNumber = newNumber;
+  }
+
 }

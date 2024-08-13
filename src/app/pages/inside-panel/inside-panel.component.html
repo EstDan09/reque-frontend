@@ -1,7 +1,56 @@
 <div class="div-container">
     <div class="panel-bg">
       <div class="div-row">
-        <div class="panel-left"></div>
+        <div class="panel-left">
+            <div class="div-row">
+                <div class="panel-left-window">
+                    <p class="number-on-panel">
+                        {{currentNumber}}
+                    </p>
+                </div>
+                <img src="assets/emergency.svg" class="img-button-alt" (click)="updateNumber(6)">
+            </div>
+            <div class="panel-left-key">
+                <div class="div-row">
+                    <div class="numbers-buttons">
+                        <img src="assets/6.svg" class="img-button" (click)="updateNumber(6)">
+                        <img src="assets/5.svg" class="img-button" (click)="updateNumber(5)">
+                        <img src="assets/4.svg" class="img-button" (click)="updateNumber(4)">
+                        <img src="assets/3.svg" class="img-button" (click)="updateNumber(3)">
+                        <img src="assets/2.svg" class="img-button" (click)="updateNumber(2)">
+                        <img src="assets/1.svg" class="img-button" (click)="updateNumber(1)">
+                    </div>
+                    <div class="up-down">
+                        <p>close</p>
+                        <p>open</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="panel-right">
+            <div>
+                <div class="panel-right-window">
+                    <p class="number-on-panel">
+                        {{currentNumber}}
+                    </p>
+                </div>
+                <div class="number-panel">
+                    <img src="assets/icons8-1-100 1.svg" alt="">
+                    <img src="assets/icons8-2-100 1.svg" alt="">
+                    <img src="assets/icons8-3-100 1.svg" alt="">
+                    <img src="assets/icons8-4-100 1.svg" alt="">
+                    <img src="assets/icons8-5-100 1.svg" alt="">
+                    <img src="assets/icons8-6-100 1.svg" alt="">
+                    <img src="assets/icons8-7-100 1.svg" alt="">
+                    <img src="assets/icons8-8-100 1.svg" alt="">
+                    <img src="assets/icons8-9-100 1.svg" alt="">
+                    <img src="assets/icons8-backspace-100 1.svg" alt="">
+                    <img src="assets/icons8-0-100 1.svg" alt="">
+                    <img src="assets/icons8-enter-100 1.svg" alt="">
+                </div>
+            </div>
+        </div>
+
       </div>
     </div>
   </div>
