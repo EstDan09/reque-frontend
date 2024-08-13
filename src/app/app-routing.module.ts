@@ -12,7 +12,9 @@ const routes: Routes = [
   {
     path: 'outer',
     component: OutsidePanelComponent
-  }
+  },
+
+  { path: '', redirectTo: 'outer', pathMatch: 'full' }
 
 ];
 
