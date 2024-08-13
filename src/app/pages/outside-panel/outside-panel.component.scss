@@ -1,0 +1,60 @@
+h1 {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.panel {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.background {
+    background-color: #d8d8d9;
+    width: 500px;
+    height: 99vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #000;
+}
+
+.display {
+    background-color: #fff;
+    width: 90%;
+    height: 20%;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.upBtn {
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid rgb(146, 186, 255);
+    cursor: pointer;
+}
+
+.downBtn {
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid rgb(146, 186, 255);
+    cursor: pointer;
+}
+
+.item {
+    margin: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.btn:focus {
+    border: 10px solid red
+}
