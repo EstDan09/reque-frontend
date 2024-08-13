@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./outside-panel.component.scss']
 })
 export class OutsidePanelComponent {
+  CURRENT_FLOOR = 0;
+
+  maxFloor = 10;
+  floor = Math.floor(Math.random() * this.maxFloor);
+  isElevatorMoving = false;
+  isElevatorError = false;
+
+  moveElevator() {
+      
+  }
 
 }
