@@ -29,21 +29,21 @@ h1 {
 }
 
 .upBtn {
-    background-color: #fff;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: 10px solid rgb(146, 186, 255);
     cursor: pointer;
+    background-color: #d2e6ff
 }
 
 .downBtn {
-    background-color: #fff;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: 10px solid rgb(146, 186, 255);
     cursor: pointer;
+    background-color: #d2e6ff
 }
 
 .item {
@@ -57,4 +57,9 @@ h1 {
 
 .btn:focus {
     border: 10px solid red
+}
+
+.enter-btn {
+    bottom: 0;
+    position: absolute;
 }
